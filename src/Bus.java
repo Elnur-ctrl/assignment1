@@ -1,4 +1,3 @@
-// Bus.java
 public class Bus extends Vehicle {
     private int passengerCapacity;
 
@@ -7,22 +6,18 @@ public class Bus extends Vehicle {
         this.passengerCapacity = passengerCapacity;
     }
 
-    @Override
     public double calculateInsuranceFee() {
         return getBasePrice() * 0.02 + getAge(java.time.Year.now().getValue()) * 100;
     }
 
-    @Override
     public void performService() {
         System.out.println("Bus serviced: brakes and safety check.");
     }
 
-    @Override
     public int getServiceIntervalKm() {
         return 15000;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", capacity=" + passengerCapacity;
     }

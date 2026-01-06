@@ -1,4 +1,3 @@
-// FleetApp.java
 import java.util.*;
 
 public class FleetApp {

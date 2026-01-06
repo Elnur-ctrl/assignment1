@@ -1,4 +1,3 @@
-// Vehicle.java
 public abstract class Vehicle implements Servicable {
     private static int idGen = 1;
     private final int id;
